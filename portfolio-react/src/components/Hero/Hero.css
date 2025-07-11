@@ -1,0 +1,124 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.hero img {
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 2.5rem;
+}
+
+.hero h1 {
+    width: 60%;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.hero h1 span {
+    background: linear-gradient(267deg, #DA7C25 0.36%, #b923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    width: 100%;
+    max-width: 800px;
+    line-height: 1.8;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-top: 1rem;
+}
+
+.hero-action {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.hero-connect, .hero-resume {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.hero-connect {
+    background: linear-gradient(267deg, #DA7C25 0.36%, #b923E1 102.06%);
+    color: white;
+    border: none;
+}
+
+.hero-connect:hover {
+    border: 2px solid white;
+}
+
+.hero-resume{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.hero-resume a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero-resume:hover {
+    border-color: #b923E1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero img {
+        width: 180px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-connect, .hero-resume {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .hero-action {
+        flex-direction: column;
+    }
+
+    .hero img {
+        width: 150px;
+    }
+
+    .hero-connect{
+        width: 200px;
+        font-size: 1rem;
+    }
+}

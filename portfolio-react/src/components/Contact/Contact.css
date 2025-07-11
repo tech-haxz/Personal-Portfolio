@@ -1,0 +1,172 @@
+.contact {
+    width: 100%;
+    max-width: 1200px;
+    padding: 4rem 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.contact-title {
+    position: relative;
+    text-align: center;
+}
+
+.contact-title h1 {
+    font-size: 3rem;
+    padding: 0 1rem;
+    font-weight: 600;
+}
+
+.contact-title img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    max-width: 100px;
+}
+
+.contact-section {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+    min-width: 280px;
+}
+
+.contact-left h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(270deg, #DF8908 80%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-left p {
+    max-width: 100%;
+    color: #D8D8D8;
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: #D8D8D8;
+    font-size: 1.125rem;
+}
+
+.contact-detail {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+    min-width: 280px;
+}
+
+.contact-right label {
+    color: #D8D8D8;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.contact-right input,
+.contact-right textarea {
+    border: none;
+    width: 100%;
+    padding: 1.25rem;
+    font-size: 1rem;
+    color: #A4A4A4;
+    font-family: 'Outfit', sans-serif;
+    background: #32323c;
+    border-radius: 10px;
+}
+
+.contact-right input {
+    height: 60px;
+}
+
+.contact-right textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-submit {
+    width: fit-content;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    font-size: 1.125rem;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+    align-self: flex-start;
+}
+
+.contact-submit:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .contact-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-left h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-title h1 {
+        font-size: 2rem;
+    }
+
+    .contact-left h1 {
+        font-size: 1.75rem;
+    }
+
+    .contact-submit {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-title img {
+        max-width: 60px;
+    }
+}

@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #161513;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+ }
+
+ body::selection{
+    color: #B415FF;
+    background-color: white;
+ }
